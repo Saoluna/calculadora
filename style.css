@@ -1,0 +1,74 @@
+@import url(font/Merriweather-Regular.ttf);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(219, 142, 142);
+}
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator{
+     display: flex;
+     flex-direction: column;
+     width: 500px;
+     font-size: 2rem;
+     border: 1px solid rgb(231, 176, 112);
+}
+
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid rgb(231, 176, 112);
+    overflow-x: auto;
+}
+
+.calculator-keypad {
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.489);
+    border: 1px solid rgb(231, 176, 112);
+}
+
+.keypad-button:hover{
+    filter: brightness(60%);
+    transition: filter.25s;
+    color: rgb(246, 228, 205);
+    
+}
+.keypad-button.orange{
+    background-color: rgb(243, 150, 74);
+}
+
+.keypad-button.large{
+    width: 50%;
+}
+.keypad-button.dark{
+    background-color: rgb(223, 113, 17);
+}
